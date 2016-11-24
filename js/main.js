@@ -101,7 +101,7 @@ function moverNave(){
 			nave.contador = 0;
 			nave.estado = 'muerto';
 			juego.estado = 'perdido';
-			textoRespuesta.titulo = 'Game over';
+			textoRespuesta.titulo = 'Fin del juego';
 			textoRespuesta.subtitulo = 'Presiona la tecla R para continuar';
 			textoRespuesta.contador = 0;
 		}
