@@ -43,13 +43,29 @@
 
         <!-- Juego -->
         <div class="container-full">
-        <center><canvas id = 'game' width='800' height='400'>Tu navegador no soporta Canvas.</canvas></center>
+        <center><canvas id = 'game' width='1240' height='540'>Tu navegador no soporta Canvas.</canvas></center>
         </div>
-        
-        <div class="container-full">
-            <h1>¿Que es un Galaxia?</h1>
-            <p>Es un conjunto de estrellas, nubes de gas, planetas, polvo cósmico, materia oscura y energía unidos gravitatoriamente. La palabra «galaxia» procede de los griegos, los cuales atribuían el nacimiento de una galaxia a las gotas de leche derramadas en el universo por la diosa Helena mientras alimentaba a su hijo Hércules. La cantidad de estrellas que forman una galaxia es incontable, desde las galaxias enanas, con 107, hasta las galaxias gigantes, con 1014 estrellas. Formando parte de una galaxia existen subestructuras como las nebulosas, los cúmulos estelares y los sistemas estelares múltiples.</p>
+
+  
+        <button class="accordion"><strong>¿Que es un Galaxia?</strong></button>
+        <div class="panel">
+           <p>Es un conjunto de estrellas, nubes de gas, planetas, polvo cósmico, materia oscura y energía unidos gravitatoriamente. La palabra «galaxia» procede de los griegos, los cuales atribuían el nacimiento de una galaxia a las gotas de leche derramadas en el universo por la diosa Helena mientras alimentaba a su hijo Hércules. La cantidad de estrellas que forman una galaxia es incontable, desde las galaxias enanas, con 107, hasta las galaxias gigantes, con 1014 estrellas. Formando parte de una galaxia existen subestructuras como las nebulosas, los cúmulos estelares y los sistemas estelares múltiples.</p>
         </div>
+
+        <button class="accordion"><strong>Via lactea</strong></button>
+        <div class="panel">
+           <p>La galaxia de la Vía Láctea o simplemente Vía Láctea es una galaxia espiral donde se encuentra el sistema solar y, por lo tanto, la Tierra. Según las observaciones, posee una masa de 10 masas solares y es una espiral barrada. Su diámetro medio se estima en unos 100 000 años luz, equivalentes a casi un trillón y medio (1,42×10) de kilómetros o 9480 millones de unidades astronómicas. Se calcula que contiene entre 200 000 y 400 000 millones de estrellas.</p>
+        </div>
+
+        <button class="accordion"><strong>Asteroides</strong></button>
+        <div class="panel">
+           <p> Un asteroide es un cuerpo rocoso, carbonáceo o metálico más pequeño que un planeta y mayor que un meteoroide que gira alrededor del Sol en una órbita interior a la de Neptuno. La mayoría orbita entre Marte y Júpiter en la región del sistema solar conocida como cinturón de asteroides, otros se acumulan en los puntos de Lagrange de Júpiter y la mayor parte del resto cruza las órbitas de los planetas.</p>
+        </div>
+
+
+
+
+       
 
     </div>
     <!-- Fin contenido de la pagina-->  
@@ -75,6 +91,20 @@
     
         <!-- Archivo javaScript -->
     <script src='js/main.js'></script>
+
+
+     <!-- Efecto de acordeon -->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+      }
+    }
+    </script>
     
 </body>
 </html>
