@@ -48,6 +48,8 @@ function dibujarEnemigos(){
 function dibujarFondo(){
 	ctx.drawImage(fondo,0,0);
 }
+
+// Funcion que dibuja la nave
 function dibujarNave(){
 	ctx.save();
 	ctx.fillStyle = 'white';
@@ -56,13 +58,13 @@ function dibujarNave(){
 }
 function agregarEventosTeclado(){
 	agregarEvento(document,"keydown", function(e){
-		// Ponemos en true la tecla presionada
+		// Se coloca en true la tecla presionada
 		teclado[e.keyCode] = true;
 		console.log(e.keyCode);
 	});
 
 	agregarEvento(document,"keyup", function(e){
-		// Ponemos en false la tecla que dejo de ser presionada
+		// Se coloca en false la tecla que dejo de ser presionada
 		teclado[e.keyCode] = false;
 	});
 	function agregarEvento(elemento, nombreEvento, funcion){
@@ -75,6 +77,8 @@ function agregarEventosTeclado(){
 		}
 	}
 }
+
+// Funcion que mueva la nave
 function moverNave(){
 	if (teclado[37]) {
 		// Movimiento a la izquierda
@@ -191,6 +195,8 @@ function fire(){
 		height: 30
 	});
 }
+
+// Funcion que dibuja los disparos
 function dibujarDisparos(){
 	ctx.save();
 	ctx.fillStyle = 'white';
@@ -282,6 +288,8 @@ function verificarContacto(){
 		}
 	}
 }
+
+// Funcion que devuelve un numero aleatorio
 function aleatorio(inferior, superior){
 	var posibilidades = superior - inferior;
 	var a = Math.random() * posibilidades;
@@ -306,7 +314,6 @@ function frameLoop(){
 }
 
 // Ejecucion de funciones
-
 window.addEventListener('load', init);
 function init(){
 	agregarEventosTeclado();

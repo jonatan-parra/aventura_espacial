@@ -1,6 +1,6 @@
 Aventura Espacial
 
-Es un juego que se desarrolla en el espacio, en donde una nave controlada por el usuario representada por un rectangulo tiene la habilidad de dispararle a naves oponentes, a su vez ellas pueden disparar aleatoriamente e impactar la nave del usuario.
+Es un juego que se desarrolla en el espacio, en donde una nave controlada por el usuario representada por un cuadrado tiene la habilidad de dispararle a naves oponentes, a su vez ellas pueden disparar aleatoriamente e impactar la nave del usuario.
 
 Hay dos forma de terminar el juego:
    - Acabar con  todas las naves.
