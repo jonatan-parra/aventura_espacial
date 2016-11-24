@@ -29,7 +29,7 @@ var fondo;
 function loadMedia(){
 	// 2:40
 	fondo = new Image();
-	fondo.src = 'space.jpg';
+	fondo.src = 'imagenes/space.jpg';
 	fondo.onload = function(){
 		var intervalo = window.setInterval(frameLoop, 1000/55);
 	}
